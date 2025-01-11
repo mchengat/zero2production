@@ -5,8 +5,6 @@ use std::net::TcpListener;
 
 use zero2production::{configuration::get_configuration, startup::run};
 
-
-
 #[tokio::main]
 async fn main() -> Result<(), std::io::Error> {
     let configuration = get_configuration().expect("Failed to read configuration.");
